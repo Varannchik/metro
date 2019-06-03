@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Map_Metro</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="content">
+            <div class="title_map">Ваше місце знаходження</div>
+            <div class="wrap_input">
+                <input type="text" >
+                <input type="submit" value="Знайти">
+            </div>
+            <div class="nav_map">
+                <span>Область</span>
+                <span>Населений пункт</span>
+                <span>Район</span>
+                <span class="active">Метро</span>
+            </div>
+
+            <div class="wrap_map">
+                <div class="blue_station_lable">
+                    <span class="lable lable_blue" style="left:457px; top:30px;"> Героїв Дніпра</span>
+                    <span class="lable lable_blue" style="left:457px; top:74px;"> Мінська</span>
+                    <span class="lable lable_blue" style="left:457px; top:115px;"> Оболонь</span>
+                    <span class="lable lable_blue" style="left:457px; top:148px" > Почайна</span>
+                    <span class="lable lable_blue" style="left:457px; top:198px"> Тараса Шевченка</span>
+                    <span class="lable lable_blue" style="left:457px; top:241px"> Контрактова площа</span>
+                    <span class="lable lable_blue" style="left:457px; top:279px"> Поштова площа</span>
+                    <span class="lable lable_blue" style="left:457px; top:307px" > Майдан Незалежності</span>
+                    <span class="lable lable_blue" style="left:267px; top:399px" > Площа Льва Толстого</span>            
+                    <span class="lable lable_blue" style="left:293px; top:419px"> Олімпійська</span>
+                    <span class="lable lable_blue" style="left:247px; top:440px"> Палац «Україна»</span>
+                    <span class="lable lable_blue" style="left:310px; top:497px" > Либідська</span>
+                    <span class="lable lable_blue" style="left:235px; top:497px"> Деміївська</span>
+                    <span class="lable lable_blue" style="left:194px; top:455px" > Голосіївська</span>
+                    <span class="lable lable_blue" style="left:140px; top:497px" > Васильківська</span>
+                    <span class="lable lable_blue" style="left:89px; top:456px" > Виставковий центр</span>
+                    <span class="lable lable_blue" style="left:74px; top:497px" > Іподром</span>
+                    <span class="lable lable_blue" style="left:33px; top:456px"> Теремки</span>
+                </div>
+                <div class="red_station_lable">
+                    <span class="lable lable_red" style="left:35px; top:86px" class="redText"> Академмістечко </span>
+                    <span class="lable lable_red" style="left:103px; top:139px" class="redText">Житомирська </span>
+                    <span class="lable lable_red" style="left:53px; top:172px" class="redText"> Святошин </span>
+                    <span class="lable lable_red" style="left:100px; top:200px" class="redText"> Нивки </span>
+                    <span class="lable lable_red" style="left:90px; top:230px" class="redText"> Берестейська </span>
+                    <span class="lable lable_red" style="left:132px; top:261px" class="redText"> Шулявська </span>
+                    <span class="lable lable_red" style="left:110px; top:292px" class="redText"> Політехнічний інститут </span>
+                    <span class="lable lable_red" style="left:209px; top:324px" class="redText"> Вокзальна </span>
+                    <span class="lable lable_red" style="left:278px; top:345px" class="redText"> Університет </span>
+                    <span class="lable lable_red" style="left:291px; top:305px" class="redText"> Театральна </span>
+                    <span class="lable lable_red" style="left:465px; top:330px" class="redText"> Хрещатик </span>
+                    <span class="lable lable_red" style="left:481px; top:350px" class="redText"> Арсенальна </span>
+                    <span class="lable lable_red" style="left:450px; top:380px" class="redText"> Дніпро </span>
+                    <span class="lable lable_red" style="left:525px; top:395px" class="redText"> Гідропарк </span>
+                    <span class="lable lable_red" style="left:597px; top:395px" class="redText"> Лівобережна </span>
+                    <span class="lable lable_red" style="left:657px; top:362px" class="redText"> Дарниця </span>
+                    <span class="lable lable_red" style="left:596px; top:313px" class="redText"> Чернігівська </span>
+                    <span class="lable lable_red" style="left:695px; top:268px" class="redText"> Лісова </span>
+                </div>
+                <div class="green_station_lable">
+                    <span class="lable lable_green" style="left:714px; top:320px" class="greenText"> Червоний хутір</span> 
+                    <span class="lable lable_green" style="left:776px; top:373px" class="greenText"> Бориспільська</span></a>
+                    <span class="lable lable_green" style="left:748px; top:402px" class="greenText"> Вирлиця</span></a>
+                    <span class="lable lable_green" style="left:721px; top:431px" class="greenText"> Харківська</span></a>
+                    <span class="lable lable_green" style="left:690px; top:462px" class="greenText"> Позняки</span></a>
+                    <span class="lable lable_green" style="left:620px; top:493px" class="greenText"> Осокорки</span></a>
+                    <span class="lable lable_green" style="left:563px; top:493px" class="greenText"> Славутич</span></a>
+                    <span class="lable lable_green" style="left:486px; top:493px" class="greenText"> Видубичі</span></a>
+                    <span class="lable lable_green" style="left:376px; top:459px" class="greenText"> Дружби народів</span></a>
+                    <span class="lable lable_green" style="left:470px; top:439px" class="greenText"> Печерська</span></a>
+                    <span class="lable lable_green" style="left:454px; top:420px" class="greenText"> Кловська</span></a>
+                    <span class="lable lable_green" style="left:431px; top:398px" class="greenText"> Палац спорту</span></a>
+                    <span class="lable lable_green" style="left:291px; top:281px" class="greenText"> Золоті ворота</span></a>
+                    <span class="lable lable_green" style="left:368px; top:237px" class="greenText"> Лук'янівська</span></a>
+                    <span class="lable lable_green" style="left:333px; top:201px" class="greenText"> Дорогожичі</span></a>
+                    <span class="lable lable_green" style="left:252px; top:129px" class="greenText"> Сирець</span></a>   
+                </div>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" >	            
+                    //blue roads
+                    <path d="M92,475 L60,475"  class="rBlue" mb_r_id="001"></path>
+                    <path d="M112,475 L92,475"  class="rBlue" mb_r_id="002"></path>
+                    <path d="M162,475 L112,475"  class="rBlue" mb_r_id="001"></path>
+                    <path d="M210,475 L162,475"  class="rBlue" mb_r_id="002"></path>
+                    <path d="M261,475 L210,475"  class="rBlue" mb_r_id="003"></path>
+                    <path d="M309,475 L261,475"  class="rBlue" mb_r_id="004"></path>
+                    <path d="M350,450 Q328,475 309,475"  class="rBlue" mb_r_id="005"></path>
+                    <path d="M380,420 350,450"  class="rBlue" mb_r_id="006"></path>
+                    <path d="M398,403 L380,420"  class="rBlue" mb_r_id="007"></path>
+                    <path d="M442,310 Q448,362 398,403"  class="rBlue" mb_r_id="008"></path>
+                    <path d="M442,282 L442,310"  class="rBlue" mb_r_id="009"></path>
+                    <path d="M442,244 L442,282"  class="rBlue" mb_r_id="010"></path>
+                    <path d="M442,201 L442,244"  class="rBlue" mb_r_id="011"></path>
+                    <path d="M442,151 L442,201"  class="rBlue" mb_r_id="012"></path>
+                    <path d="M442,118 L442,151"  class="rBlue" mb_r_id="013"></path>
+                    <path d="M442,77 L442,118"  class="rBlue" mb_r_id="014"></path>
+                    <path d="M442,33 L442,77"  class="rBlue" mb_r_id="015"></path>                     
+                    
+                    //red road
+                    <path d="M63,111 L91,139" class="rRed" mb_r_id="016"></path>
+                    <path d="M91,139 L122,169" class="rRed" mb_r_id="017"></path> 
+                    <path d="M122,169 L149,196" class="rRed" mb_r_id="018"></path> 
+                    <path d="M149,196 L179,227" class="rRed" mb_r_id="019"></path> 
+                    <path d="M179,227 L210,256" class="rRed" mb_r_id="020"></path>
+                    <path d="M210,256 L243,288" class="rRed" mb_r_id="021"></path>
+                    <path d="M243,288 Q266,315 281,318" class="rRed" mb_r_id="022"></path> 
+                    <path d="M281,318 Q290,324 330,324" class="rRed" mb_r_id="023"></path> 
+                    <path d="M330,324 L362,324" class="rRed" mb_r_id="024"></path> 
+                    <path d="M362,324 Q432,322 452,335" class="rRed" mb_r_id="025"></path>
+                    <path d="M452,335 L473,356" class="rRed" mb_r_id="026"></path> 
+                    <path d="M473,356 Q488,376 508,376" class="rRed" mb_r_id="027"></path> 
+                    <path d="M508,376 L546,376" class="rRed" mb_r_id="028"></path> 
+                    <path d="M546,376 L590,376" class="rRed" mb_r_id="029"></path> 
+                    <path d="M590,376 Q624,379 642,356" class="rRed" mb_r_id="030"></path> 
+                    <path d="M642,356 L677,323" class="rRed" mb_r_id="031"></path> 
+                    <path d="M677,323 L708,292" class="rRed" mb_r_id="031"></path> 
+
+                    //green road
+                    <path d="M789,342 L763,370" class="rGreen" mb_r_id="032"></path>
+                    <path d="M763,370 L735,398" class="rGreen" mb_r_id="033"></path> 
+                    <path d="M735,398 L704,428" class="rGreen" mb_r_id="034"></path>
+                    <path d="M704,428 L674,457" class="rGreen" mb_r_id="035"></path>
+                    <path d="M674,457 Q654,478 625,474" class="rGreen" mb_r_id="036"></path>
+                    <path d="M625,474 L582,474" class="rGreen" mb_r_id="037"></path>
+                    <path d="M582,474 L506,474" class="rGreen" mb_r_id="038"></path>
+                    <path d="M506,474 Q490,476 473,454" class="rGreen" mb_r_id="039"></path>
+                    <path d="M473,454 L455,437" class="rGreen" mb_r_id="040"></path>
+                    <path d="M455,437 L436,418" class="rGreen" mb_r_id="041"></path>
+                    <path d="M436,418 L420,402" class="rGreen" mb_r_id="042"></path>
+                    <path d="M420,402 Q364,364 376,308" class="rGreen" mb_r_id="043"></path>
+                    <path d="M376,308 Q378,255 359,240" class="rGreen" mb_r_id="044"></path>
+                    <path d="M359,240 L319,201" class="rGreen" mb_r_id="045"></path>
+                    <path d="M319,201 L270,152" class="rGreen" mb_r_id="046"></path>
+
+                    //transfer road
+                    <path d="M376,308 Q359,305 362,324" class="rBlack" mb_r_id="047"></path>
+                    <path d="M442,310 Q462,315 452,332" class="rBlack" mb_r_id="048"></path>
+                    <path d="M398,403 Q411,415 420,402" class="rBlack" mb_r_id="049"></path>
+
+                    //blue stations
+                    <circle cx="442" cy="33" mb_sd_id="018" class="mStation blueStation"></circle>
+                    <circle cx="442" cy="77" mb_sd_id="017" class="mStation blueStation"></circle>
+                    <circle cx="442" cy="118" mb_sd_id="016" class="mStation blueStation"></circle>
+                    <circle cx="442" cy="151" mb_sd_id="015" class="mStation blueStation"></circle>
+                    <circle cx="442" cy="201" mb_sd_id="014" class="mStation blueStation"></circle>
+                    <circle cx="442" cy="244" mb_sd_id="013" class="mStation blueStation"></circle>
+                    <circle cx="442" cy="282" mb_sd_id="013" class="mStation blueStation"></circle>
+                    <circle cx="442" cy="310" mb_sd_id="011" class="mStation blueStation"></circle>
+                    <circle cx="398" cy="403" mb_sd_id="010" class="mStation blueStation"></circle>           
+                    <circle cx="380" cy="420" mb_sd_id="009" class="mStation blueStation"></circle>
+                    <circle cx="350" cy="450" mb_sd_id="008" class="mStation blueStation"></circle>
+                    <circle cx="309" cy="475" mb_sd_id="007" class="mStation blueStation"></circle>
+                    <circle cx="261" cy="475" mb_sd_id="006" class="mStation blueStation"></circle>
+                    <circle cx="210" cy="475" mb_sd_id="005" class="mStation blueStation"></circle>
+                    <circle cx="162" cy="475" mb_sd_id="004" class="mStation blueStation"></circle>
+                    <circle cx="112" cy="475" mb_sd_id="003" class="mStation blueStation"></circle>
+                    <circle cx="92" cy="475" mb_sd_id="002" class="mStation blueStation"></circle>
+                    <circle cx="60" cy="475" mb_sd_id="001" class="mStation blueStation"></circle>
+                    
+                    //red stations
+                    <circle cx="63" cy="111" mb_sd_id="019" class="mStation redStation"></circle>
+                    <circle cx="91" cy="139" mb_sd_id="020" class="mStation redStation"></circle>
+                    <circle cx="122" cy="169" mb_sd_id="021" class="mStation redStation"></circle>
+                    <circle cx="149" cy="196" mb_sd_id="022" class="mStation redStation"></circle>
+                    <circle cx="179" cy="227" mb_sd_id="023" class="mStation redStation"></circle>
+                    <circle cx="210" cy="256" mb_sd_id="024" class="mStation redStation"></circle>
+                    <circle cx="243" cy="288" mb_sd_id="025" class="mStation redStation"></circle>
+                    <circle cx="281" cy="318" mb_sd_id="026" class="mStation redStation"></circle>
+                    <circle cx="330" cy="324" mb_sd_id="027" class="mStation redStation"></circle>
+                    <circle cx="362" cy="324" mb_sd_id="028" class="mStation redStation"></circle>
+                    <circle cx="452" cy="335" mb_sd_id="029" class="mStation redStation"></circle>
+                    <circle cx="473" cy="356" mb_sd_id="030" class="mStation redStation"></circle>
+                    <circle cx="508" cy="376" mb_sd_id="031" class="mStation redStation"></circle>
+                    <circle cx="546" cy="376" mb_sd_id="032" class="mStation redStation"></circle>
+                    <circle cx="590" cy="376" mb_sd_id="033" class="mStation redStation"></circle>
+                    <circle cx="642" cy="356" mb_sd_id="034" class="mStation redStation"></circle>
+                    <circle cx="677" cy="323" mb_sd_id="035" class="mStation redStation"></circle>
+                    <circle cx="708" cy="292" mb_sd_id="036" class="mStation redStation"></circle>
+
+                    //green stations
+                    <circle cx="789" cy="342" mb_sd_id="037" class="mStation greenStation"></circle>
+                    <circle cx="763" cy="370" mb_sd_id="038" class="mStation greenStation"></circle>
+                    <circle cx="735" cy="398" mb_sd_id="039" class="mStation greenStation"></circle>
+                    <circle cx="704" cy="428" mb_sd_id="040" class="mStation greenStation"></circle> 
+                    <circle cx="674" cy="457" mb_sd_id="041" class="mStation greenStation"></circle>
+                    <circle cx="625" cy="474" mb_sd_id="042" class="mStation greenStation"></circle>
+                    <circle cx="582" cy="474" mb_sd_id="043" class="mStation greenStation"></circle>
+                    <circle cx="506" cy="474" mb_sd_id="044" class="mStation greenStation"></circle>
+                    <circle cx="473" cy="454" mb_sd_id="045" class="mStation greenStation"></circle>
+                    <circle cx="455" cy="437" mb_sd_id="046" class="mStation greenStation"></circle> 
+                    <circle cx="436" cy="418" mb_sd_id="047" class="mStation greenStation"></circle> 
+                    <circle cx="420" cy="402" mb_sd_id="048" class="mStation greenStation"></circle>
+                    <circle cx="376" cy="308" mb_sd_id="049" class="mStation greenStation"></circle>
+                    <circle cx="359" cy="240" mb_sd_id="050" class="mStation greenStation"></circle> 
+                    <circle cx="319" cy="201" mb_sd_id="051" class="mStation greenStation"></circle>
+                    <circle cx="270" cy="152" mb_sd_id="052" class="mStation greenStation"></circle>
+                </svg>
+            </div>    
+            <div class="wrap_small_map">
+                <div class="small_map_red">
+                    <ul>
+                        <li>Лісова</li>
+                        <li>Чернігівська</li>
+                        <li>Дарниця</li>
+                        <li>Лівобережна</li>
+                        <li>Гідропарк</li>
+                        <li>Дніпро</li>                            
+                        <li>Арсенальна</li>
+                        <li>Хрещатик</li>
+                        <li>Театральна</li>
+                        <li>Університет</li>
+                        <li>Вокзальна</li>
+                        <li>Політехнічний інститут</li>                           
+                        <li>Шулявська</li>
+                        <li>Берестейська</li>
+                        <li>Нивки</li>
+                        <li>Святошин</li>
+                        <li>Житомирська</li>
+                        <li>Академмістечко</li>
+                    </ul>
+                </div>
+                <div class="small_map_blue">
+                    <ul>
+                        <li>Героїв Дніпра</li>
+                        <li>Мінська</li>
+                        <li>Оболонь</li>
+                        <li>Почайна</li>
+                        <li>Тараса Шевченка</li>
+                        <li>Контрактова площа</li>                    
+                        <li>Поштова площа</li>
+                        <li>Майдан Незалежності</li>
+                        <li>Площа Льва Толстого</li>
+                        <li>Олімпійська</li>
+                        <li>Палац «Україна»</li>
+                        <li>Либідська</li>                    
+                        <li>Деміївська</li>
+                        <li>Голосіївська</li>
+                        <li>Васильківська</li>
+                        <li>Виставковий центр</li>
+                        <li>Іподром</li>
+                        <li>Теремки</li>
+                    </ul>
+                </div>
+                <div class="small_map_green">
+                    <ul>
+                        <li>Героїв Дніпра</li>
+                        <li>Мінська</li>
+                        <li>Оболонь</li>
+                        <li>Почайна</li>
+                        <li>Тараса Шевченка</li>
+                        <li>Контрактова площа</li>                           
+                        <li>Поштова площа</li>
+                        <li>Майдан Незалежності</li>
+                        <li>Площа Льва Толстого</li>
+                        <li>Олімпійська</li>
+                        <li>Палац «Україна»</li>
+                        <li>Либідська</li>                            
+                        <li>Деміївська</li>
+                        <li>Голосіївська</li>
+                        <li>Васильківська</li>
+                        <li>Виставковий центр</li>
+                        <li>Іподром</li>
+                        <li>Теремки</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wrap_list_station">
+            <div class="content list_content">
+                <div class="list_road">
+                    <div class="item_road red_road red_road_active">
+                        <div class="name_road ">M1</div>
+                        <span></span>
+                    </div>
+                    <div class="item_road blue_road">
+                        <div class="name_road ">M2</div>
+                        <span></span>
+                    </div>
+                    <div class="item_road green_road">
+                        <div class="name_road ">M3</div>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="list_station red_station visible">
+                    <ul>
+                        <li>Лісова</li>
+                        <li>Чернігівська</li>
+                        <li>Дарниця</li>
+                        <li>Лівобережна</li>
+                        <li>Гідропарк</li>
+                        <li>Дніпро</li>
+                    </ul>
+                    <ul>
+                        <li>Арсенальна</li>
+                        <li>Хрещатик</li>
+                        <li>Театральна</li>
+                        <li>Університет</li>
+                        <li>Вокзальна</li>
+                        <li>Політехнічний інститут</li>
+                    </ul>
+                    <ul>
+                        <li>Шулявська</li>
+                        <li>Берестейська</li>
+                        <li>Нивки</li>
+                        <li>Святошин</li>
+                        <li>Житомирська</li>
+                        <li>Академмістечко</li>
+                    </ul>
+                </div>
+                <div class="list_station blue_station">
+                    <ul>
+                        <li>Героїв Дніпра</li>
+                        <li>Мінська</li>
+                        <li>Оболонь</li>
+                        <li>Почайна</li>
+                        <li>Тараса Шевченка</li>
+                        <li>Контрактова площа</li>
+                    </ul>
+                    <ul>
+                        <li>Поштова площа</li>
+                        <li>Майдан Незалежності</li>
+                        <li>Площа Льва Толстого</li>
+                        <li>Олімпійська</li>
+                        <li>Палац «Україна»</li>
+                        <li>Либідська</li>
+                    </ul>
+                    <ul>
+                        <li>Деміївська</li>
+                        <li>Голосіївська</li>
+                        <li>Васильківська</li>
+                        <li>Виставковий центр</li>
+                        <li>Іподром</li>
+                        <li>Теремки</li>
+                    </ul>
+                </div>
+                <div class="list_station green_station">
+                    <ul>
+                        <li>Сирець</li>
+                        <li>Дорогожичі</li>
+                        <li>Лук'янівська</li>
+                        <li>Золоті ворота</li>
+                        <li>Палац спорту</li>
+                        <li>Кловська</li>
+                    </ul>
+                    <ul>
+                        <li>Печерська</li>
+                        <li>Дружби народів</li>
+                        <li>Видубичі</li>
+                        <li>Славутич</li>
+                        <li>Осокорки</li>
+                        <li>Позняки</li>
+                    </ul>
+                    <ul>
+                        <li>Харківська</li>
+                        <li>Вирлиця</li>
+                        <li>Бориспільська</li>
+                        <li>Червоний хутір</li>
+                    </ul>
+                </div>
+            </div>            
+        </div>
+    </div> 
+    </div>
+    
+
+    <script src="/main.js"></script>
+    
+</body>
+</html>
