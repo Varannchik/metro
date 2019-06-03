@@ -1,0 +1,542 @@
+@red:#ff4445;
+@blue:#1e1df5;
+@green:#0ac842;
+@light_green:#36ac53;
+@black:#000;
+@white:#fff;
+@nav_color:#32a1fc;
+@gray:#b4b9c1;
+@gray_bg:#f7f8f9;
+@border_gray:#e1e1e1;
+@light_blue:#3186c6;
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    max-width: 860px;   
+    background: @white;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+.content{
+    
+    padding: 0 25px;
+    
+    
+} 
+.title_map{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: @black;
+    font-weight: 600;
+    text-align: center;
+    margin: 25px 0;
+}
+.nav_map{
+    display: flex;        
+    align-items: center;
+    justify-content: flex-start;        
+    span{
+        padding: 5px 0;
+        margin: 0 10px;
+        border-bottom: 2px solid transparent;
+        color: @nav_color;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        cursor: pointer;
+        &:first-child{
+            margin: 0 10px 0 0;
+        }
+        &:last-child{
+            margin: 0 0 0 10px;
+        }
+        &:hover{
+            border-bottom: 2px solid @black;
+            color: @gray;
+        }
+    }
+    .active{
+        border-bottom: 2px solid @black;
+        color: @gray;
+    }
+}
+.wrap_input{
+    width: 65%;
+    box-shadow: 3px 3px 5px rgba(246,246,246,0.95);
+    border-radius: 24px;    
+    line-height: 40px;
+    padding: 2px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    input[type="text"]{
+        outline: none;
+        border: none;
+        line-height: 40px;
+        width: 100%;
+        vertical-align: middle;
+    }
+    input[type="submit"]{
+        width: 100px;
+        text-align: center;
+        color: @white;
+        background: #309af2;
+        line-height: 30px;
+        border-radius: 16px;
+        border: none;
+        cursor: pointer;
+
+    }
+}
+
+.wrap_list_station{
+    background: @gray_bg;
+    border-top: 1px solid @border_gray;
+    padding: 25px 0 30px 0;
+    border-radius: 0 0 6px 6px;
+    .list_station{
+        display: flex;
+        justify-content: space-around;
+        font-family: 'Open Sans', sans-serif;
+        width: 100%;
+        ul{
+            li{
+                font-size: 14px;
+                color: @black;
+                cursor: pointer;
+            }
+        }
+    }
+    .list_road{
+        width: 80px;
+    }
+    .red_station{
+        display: none;
+        ul{
+            list-style: none;
+            li{
+                &:hover{
+                    color: @red;
+                }
+            }
+        }
+    }
+    .blue_station{
+        display: none;
+        ul{
+            list-style: none;
+            li{
+                &:hover{
+                    color: @light_blue;
+                }
+            }
+        }
+    }
+    .green_station{
+        display: none;
+        ul{
+            list-style: none;
+            li{
+                &:hover{
+                    color: @light_green;
+                }
+            }
+        }
+    }
+    .visible{
+        display: flex;       
+    }
+}
+.list_content{
+    display: flex;
+}
+
+.item_road{ 
+    display: flex;
+    align-items: center; 
+    margin-bottom: 6px; 
+    cursor: pointer;
+    .name_road{
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        border:1px solid transparent;
+        color: @white;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 12px ;
+        font-size: 13px; 
+        font-family: 'Open Sans', sans-serif;      
+    }
+    span{
+        height: 5px;
+        width: 40px;
+        display: inline-block;
+    }    
+}
+.red_road{ 
+    .name_road{
+        background: @red;  
+    }
+    span{
+        background: @red;
+    }             
+    &:hover{
+        .name_road{
+            border:1px solid @red;
+            background: @white;
+            color: @red;
+        }
+        span{
+            height: 10px;
+        }            
+    }
+}
+.red_road_active{
+    .name_road{
+        border:1px solid @red;
+        background: @white;
+        color: @red;
+    }
+    span{
+        height: 10px;
+    }   
+}
+.green_road{
+    .name_road{
+        background: @light_green;  
+    }
+    span{
+        background: @light_green;
+    }             
+    &:hover{
+        .name_road{
+            border:1px solid @light_green;
+            background: @white;
+            color:@light_green;
+        }
+        span{
+            height: 10px;
+        }            
+    }
+}
+.green_road_active{
+    .name_road{
+        border:1px solid @light_green;
+        background: @white;
+        color: @light_green;
+    }
+    span{
+        height: 10px;
+    }    
+}
+.blue_road{ 
+    .name_road{
+        background:@light_blue;  
+    }
+    span{
+        background: @light_blue;
+    }             
+    &:hover{
+        .name_road{
+            border:1px solid @light_blue;
+            background: @white;
+            color: @light_blue;
+        }
+        span{
+            height: 10px;
+        }            
+    }
+}
+.blue_road_active{
+    .name_road{
+        border:1px solid @light_blue;
+        background: @white;
+        color: @light_blue;
+    }
+    span{
+        height: 10px;
+    }         
+}
+
+.wrap_map{
+    position: relative;
+    margin: 30px 0;
+    .lable{
+        position: absolute;
+        font-family:sans-serif;
+        font-size:11px;
+        cursor: pointer;
+        color: #000;
+        height: 18px;
+        line-height: 18px;
+        padding: 3px 5px;
+        border:1px solid transparent;
+        border-radius: 18px;
+        
+    }
+    .lable_blue{
+        &:hover{            
+            border:1px solid @blue;
+            color: @blue; 
+        }  
+    }
+    .lable_red{
+        &:hover{            
+            border:1px solid @red;
+            color: @red; 
+        }  
+    }
+    .lable_green{
+        &:hover{            
+            border:1px solid @light_green;
+            color: @light_green; 
+        }  
+    }
+}
+svg{
+    margin: 10px 0 0 0;
+    width:850px; 
+    height:510px;
+    circle{
+        cursor: pointer;
+        stroke: @black;
+        r:4;
+        fill:@white;
+        stroke:@black;
+        stroke-width: 1;         
+    }
+    text{
+        fill:@black;
+        font-family:sans-serif;
+        font-size:11px;
+        cursor: pointer;       
+    }    
+    
+    .blueStation{
+        &:hover{
+            stroke:@blue;
+            fill: @blue;
+            r:6;
+        }                
+    }        
+       
+    .redStation{
+        &:hover{
+            stroke: @red;
+            fill: @red;
+            r:6;    
+        }          
+    }
+        
+    .greenStation{ 
+        &:hover{
+            stroke:@green;
+            fill: @green;
+            r:6;
+        }               
+    }   
+    
+    .rBlue{
+        stroke-width: 2;
+        stroke:@blue;
+        fill:none;
+    }
+    .rRed{
+        fill:none;
+        stroke:@red;
+        stroke-width: 3;
+        
+    }
+    .rGreen{
+        fill:none;
+        stroke:@green;
+        stroke-width: 2;
+    } 
+    .rBlack{
+        fill:none;
+        stroke:@black;
+        stroke-width: 2; 
+    }  
+}
+.wrap_small_map{
+    display: none;
+}
+.small_map_red{       
+    border-left: 4px solid @red;
+    padding-left: 10px; 
+    margin: 40px 0;
+    ul{
+        list-style: none;
+        
+        li{
+            position: relative;
+            line-height: 30px;
+            cursor: pointer;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 5px;
+                height: 3px;
+                background: @red;
+                left: -10px;
+                top: 15px;                
+            }
+            &:first-child{
+                top: -15px;
+                font-weight: bold;
+            } 
+            &:last-child{
+                bottom: -12px;
+                font-weight: bold;
+            }
+            &:hover{
+                color: @red;
+            } 
+        }
+    }
+}
+.small_map_blue{
+        
+    border-left: 4px solid @blue;
+    padding-left: 10px; 
+    margin: 40px 0;
+    ul{
+        list-style: none;
+        
+        li{
+            position: relative;
+            line-height: 30px;
+            cursor: pointer;
+            &:hover{
+                color: @blue;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 5px;
+                height: 3px;
+                background: @blue;
+                left: -10px;
+                top: 15px;                
+            }
+            &:first-child{
+                top: -15px;
+                font-weight: bold;
+            } 
+            &:last-child{
+                bottom: -12px;
+                font-weight: bold;
+            }             
+        }
+    }
+}
+.small_map_green{
+        
+    border-left: 4px solid @green;
+    padding-left: 10px; 
+    margin: 40px 0;
+    ul{
+        list-style: none;
+        
+        li{
+            position: relative;
+            line-height: 30px;
+            cursor: pointer;
+            &:hover{
+                color: @green;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 5px;
+                height: 3px;
+                background: @green;
+                left: -10px;
+                top: 15px;                
+            }
+            &:first-child{
+                top: -15px;
+                font-weight: bold;
+            } 
+            &:last-child{
+                bottom: -12px;
+                font-weight: bold;
+            }             
+        }
+    }
+}
+@media (max-width: 900px){
+    .wrap{
+        max-width: none;
+    width: 100%;
+    }
+    .content{
+        padding: 0 5px;
+    }
+    
+}
+@media (max-width: 850px){
+
+}
+@media (max-width: 768px){
+    .content{
+        padding: 0 10px;
+    }
+    .wrap_input {
+        width: auto;
+    }
+    .nav_map {        
+        justify-content: center;
+    }
+    svg{
+        display: none;
+    }
+    .wrap_small_map{
+        display: block;
+    }
+    .blue_station_lable{
+        display: none;
+    }
+    .red_station_lable{
+        display: none;
+    }
+    .green_station_lable{
+        display: none;       
+    }
+
+}
+@media (max-width: 550px){
+    .list_content{
+        flex-direction: column;
+    }
+    .wrap_list_station {
+        .list_road {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .list_station{
+            justify-content: space-between;
+
+        }
+    }
+    
+}
+@media (max-width: 400px){
+    .wrap_list_station{
+        .list_station{
+            flex-direction: column;           
+            justify-content: center;
+            ul{
+                li{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
